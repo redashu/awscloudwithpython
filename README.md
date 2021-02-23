@@ -48,3 +48,23 @@ root@3b141354c513:/# aws  s3  ls
 
 ```
 
+## PYthon to create S3 Bucket 
+
+<img src="s3.png">
+
+## creating bucket 
+
+```
+import  boto3 # boto3 for creating resources in aws cloud
+import time 
+# function for creating bucket on S3 
+s3=boto3.client('s3')
+# connecting to aws s3 
+s3.create_bucket(Bucket="ashutoshhlnbbucket11")
+# this will use secret and access key to connect & create 
+time.sleep(3)
+print("S3 bucket got create you can check in AWS Portal")
+
+
+```
+
